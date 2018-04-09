@@ -26,11 +26,10 @@ int main(int argc, char *argv[]){
       return EXIT_SUCCESS;
     }else{
 
-      
+      printReminder();      
 
       if(strcmp(op, "-c") == 0){
 
-	printReminder();
 	printf("Compression\n");
 
 	printf("enter tarball name:\n");
@@ -44,7 +43,6 @@ int main(int argc, char *argv[]){
     
       }else if(strcmp(op, "-x") == 0){
 
-	printReminder();
 	printf("Decompression\n");
 
 	printf("Name of tarball to de-compress:\n");
@@ -66,8 +64,8 @@ int main(int argc, char *argv[]){
 	printf("\n");
       
 	printf("-c\t|\t");
-	printf("takes in a name for a tarball to be made");
-	printf(" then makes it\n");
+	printf("takes in a name for a tarball to be made ");
+	printf("then makes it\n");
 
 	printf("-x\t|\t");
 	printf("decompresses a given tarball\n");
